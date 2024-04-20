@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.contrib import auth
 from django.urls import reverse
 
+
 from .forms import UserLoginForm, UserRegisterForm, UserProfileForm
 
 
@@ -46,3 +47,11 @@ def profile(request):
 
     context = {'title': 'Личный кабинет', 'form': form}
     return render(request, 'user/profile.html', context=context)
+
+
+def login(request):
+    return render(request, '')
+
+
+def register(request):
+    return render(request, '')
