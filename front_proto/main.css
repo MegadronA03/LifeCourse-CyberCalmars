@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto/Regular.ttf") format("ttf"),
+}
+* {
+    font-family: "Roboto", sans-serif;
+    border: 1px solid black;
+}
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.boxV {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center;
+}
+.boxH {
+    display: flex; /* Enables flexbox for horizontal arrangement */
+    flex-direction: row; /* Arranges elements side-by-side */
+    align-items: center;
+}
+.dropdown {
+    background: none;
+    border: none;
+}
+.dropdown:hover {
+    background: #0000002f;
+    border: none;
+}
+.welcomeModule {
+    width:100%;
+    max-width: 50em;
+    aspect-ratio: 21/9;
+    overflow: hidden;
+}
+.welcomeModule div {
+    position: relative;
+    bottom: 2em;
+    right: 0.75em;
+    text-align: end;
+    font-size: 2em;
+}
+.welcomeModule img {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.scrollV {
+    overflow-y: auto;
+}
+#header {
+    width:100%;
+    max-width: 50em;
+}
+#headerActions {
+    width:100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
+}
+#headerLogo {
+    aspect-ratio: 1;
+    width: 10%;
+    min-width: 3em;
+    padding: 0.5em;
+}
+.searchModule {
+    width: 100%;
+    max-width: 50em;
+    justify-content:center;
+}
+#searchField {
+    width: 100%;
+    height: min-content;
+}
+#searchControl {
+    width: 80%;
+    justify-content:center;
+}
+#searchTemplates {
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.searchTemplate {
+    margin: 0.25em;
+}
+.achivementsModule {
+    width: 100%;
+    max-width: 50em;
+    justify-content:center;
+}
+.achivementsModule .boxV {
+    margin: 0.25em;
+}
+.achivementsModule .boxV div {
+    color: purple;
+}
+.achivementsModule .boxV .boxH {
+    color: red;
+}
